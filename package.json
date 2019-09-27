@@ -5,6 +5,7 @@
   "main": "component/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
     "demo": "webpack-dev-server --mode development",
     "prepublishOnly": "npm run test; npm run build"
   },
@@ -25,6 +26,14 @@
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omatviiv/omtv-react-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omatviiv/omtv-react-input.git/issues"
+  },
+  "homepage": "https://github.com/omatviiv/omtv-react-input.git",
   "author": "Oleh Matviiv",
   "license": "ISC"
 }
