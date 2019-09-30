@@ -2,6 +2,7 @@ const path = require('path');
 const pkg = require('./package.json');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const FlowWebpackPlugin = require('flow-webpack-plugin');
 
 module.exports = {
   entry: './demo/index.js',
@@ -17,7 +18,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-flow',
+            ],
           },
         },
       },
@@ -30,6 +35,7 @@ module.exports = {
       template: path.resolve(__dirname, 'demo/index.html'),
     }),
     new CleanWebpackPlugin(),
+    new FlowWebpackPlugin(),
   ],
   devServer: {
     contentBase: './demo/dist',
