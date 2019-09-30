@@ -44,7 +44,7 @@ for your project, it's webpack/babel config is compatible with this approach.
 
 # Static type checking
 Component contains [Flow Comment Types](https://flow.org/en/docs/types/comments/)
-that allows use flow statick typeckeding or simply ignore it.
+that allows either to use flow static typechecking or simply ignore it.
 
 # Improve
 1. Install dependencies `npm i`.
