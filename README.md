@@ -12,11 +12,10 @@ import Input from 'omtv-react-input';
 <Input value='some default input' />
 ```
 
-Component created with this template will not be bundled or compiled.
-It provides component in raw form as is in `component/` folder.
-The project that is going to use component created with this template should
-bundle and complie the component itself, here are the instructions for 
-webpack and babel:
+Component is not bundled or compiled, It is provided in raw form as is
+(see `component/` folder).
+The project that is going to use this component should bundle and
+complie component itself, here are the instructions for webpack and babel:
 ```webpack.config.js
 module.exports = {
   ...
@@ -40,9 +39,12 @@ module.exports = {
   ...
 };
 ```
-
 You can also use [omtv-template-react](https://github.com/omatviiv/omtv-template-react)
-for your project, its webpack/babel config is compatible with this approach
+for your project, it's webpack/babel config is compatible with this approach.
+
+# Static type checking
+Component contains [Flow Comment Types](https://flow.org/en/docs/types/comments/)
+that allows use flow statick typeckeding or simply ignore it.
 
 # Improve
 1. Install dependencies `npm i`.
