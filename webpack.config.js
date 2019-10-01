@@ -10,6 +10,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'demo/dist'),
   },
+  resolve: {
+    alias: {
+      demo: path.resolve(__dirname, 'demo/'),
+      componnt: path.resolve(__dirname, 'component/'),
+    },
+  },
   module: {
     rules: [
       {

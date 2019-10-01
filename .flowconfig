@@ -7,5 +7,7 @@
 [lints]
 
 [options]
+module.name_mapper='^demo' -> '<PROJECT_ROOT>/demo'
+module.name_mapper='^componnt' -> '<PROJECT_ROOT>/component'
 
 [strict]

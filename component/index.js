@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const InputStyled = styled.input`
+export const InputStyled = styled.input`
   padding: 10px;
 `;
 /*::

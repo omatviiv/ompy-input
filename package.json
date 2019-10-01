@@ -4,7 +4,7 @@
   "description": "text input component",
   "main": "component/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --mode=production",
     "demo": "webpack-dev-server --mode development",
     "prepublishOnly": "npm run test; npm run build"
@@ -19,17 +19,37 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "flow-bin": "^0.108.0",
     "flow-webpack-plugin": "^1.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.10.1",
     "styled-components": "^4.4.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.1"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "^demo(.*)$": "<rootDir>/demo$1",
+      "^componnt(.*)$": "<rootDir>/component$1"
+    },
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "repository": {
     "type": "git",
