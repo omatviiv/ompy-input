@@ -4,6 +4,7 @@
 - implement component with label
 
 # 0.0.2 -
++ add styled-components
 + configure flow
 + move releases info into todo
 
