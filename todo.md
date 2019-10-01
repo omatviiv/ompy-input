@@ -1,9 +1,10 @@
-- configure jest
-- write snapshot tests
 - Add onChange prop
 - implement component with label
 
 # 0.0.2 -
++ move jest config to jest.config.js
++ write snapshot tests
++ configure jest
 + add styled-components
 + configure flow
 + move releases info into todo
