@@ -50,3 +50,13 @@ that allows either to use flow static typechecking or simply ignore it.
 1. Install dependencies `npm i`.
 2. Start webpack dev server for demo project `npm run demo`.
 3. Improve component.
+4. (optional) Publish component demo:
+  `npm run publish-demo` will try to publish demo
+  create scripts/secret.js file
+  ```
+    module.exports = {
+      pwd: '', // leave this field empty if you want script to prompt for password
+      host: 'your.host.com', // default port 22, specify other port: 'your.host:222'
+    };
+  ```
+  Scripts/secret.js is added to gitignore.
