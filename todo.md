@@ -2,6 +2,7 @@
 - implement component with label
 
 # 0.0.2 -
++ publish demo npm script
 + more npmignores
 + move jest config to jest.config.js
 + write snapshot tests
