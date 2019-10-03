@@ -5,6 +5,7 @@
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.2 -
++ theming support
 + publish demo npm script
 + more npmignores
 + move jest config to jest.config.js

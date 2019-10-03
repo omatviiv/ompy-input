@@ -1,4 +1,5 @@
 Text input component.
+Supports [theming](https://github.com/omatviiv/omtv-template-react-component#component-theming-approach).
 
 Check component [demo](http://matviiv.com/omtv-react-component).
 

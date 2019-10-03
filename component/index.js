@@ -2,14 +2,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const InputStyled = styled.input`
-  padding: 10px;
-`;
 /*::
+import type { Node } from 'react';
+
 type Props = {|
   value: string,
+  theme?: {|
+    Input: * => Node,
+  |},
 |}
 */
-const Input = (p/*: Props*/) => <InputStyled type='text' value={ p.value } />;
+const Input = ({
+  value,
+  theme = {
+    Input: styled.input`
+      padding: 10px;
+    `,
+  },
+}/*: Props*/) => <theme.Input type='text' value={ value } />;
 
 export default Input;
