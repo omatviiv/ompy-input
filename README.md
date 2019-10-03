@@ -1,5 +1,7 @@
 Text input component.
 
+Check component [demo](http://matviiv.com/omtv-react-component).
+
 # Install
 ```
 npm i omtv-react-input

@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "webpack --mode=production",
     "demo": "webpack-dev-server --mode development",
-    "publish-demo": "node ./scripts/publishDemo.js",
+    "publish-demo": "npm run test; npm run build; node ./scripts/publishDemo.js",
     "prepublishOnly": "npm run test; npm run build"
   },
   "peerDependencies": {
