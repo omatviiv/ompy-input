@@ -12,13 +12,14 @@ type Props = {|
   |},
 |}
 */
+export const defaultTheme = {
+  Input: styled.input`
+    padding: 10px;
+  `,
+};
 const Input = ({
   value,
-  theme = {
-    Input: styled.input`
-      padding: 10px;
-    `,
-  },
+  theme = defaultTheme,
 }/*: Props*/) => <theme.Input type='text' value={ value } />;
 
 export default Input;
