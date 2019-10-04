@@ -1,3 +1,4 @@
+- test default theme
 - Add onChange prop
 - implement component with label
 - scp2 lodash vulnerability
@@ -5,6 +6,7 @@
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.2 -
++ test watch npm script
 + theming support
 + publish demo npm script
 + more npmignores

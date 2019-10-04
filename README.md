@@ -52,8 +52,9 @@ that allows either to use flow static typechecking or simply ignore it.
 # Improve
 1. Install dependencies `npm i`.
 2. Start webpack dev server for demo project `npm run demo`.
-3. Improve component.
-4. (optional) Publish component demo:
+3. (optional) Start jest in watch mode `npm run jest`.
+4. Improve component.
+5. (optional) Publish component demo:
   `npm run publish-demo` will try to publish demo
   create scripts/secret.js file
   ```
