@@ -1,12 +1,13 @@
 // @flow
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 /*::
 import type { Node } from 'react';
 
 type Props = {|
-  value: string,
+  value?: string,
+  onChange?: (value: string) => any,
   theme?: {|
     Input: * => Node,
   |},
@@ -14,12 +15,25 @@ type Props = {|
 */
 export const thm = {
   Input: styled.input`
-    padding: 10px;
+    padding: 5px;
   `,
 };
 const Input = ({
-  value,
+  value = '',
+  onChange = (a, b) => a + b,
   theme = thm,
-}/*: Props*/) => <theme.Input type='text' value={ value } />;
+}/*: Props*/) => {
+  const [st, setSt] = useState({ value });
+  useEffect(() => { setSt({ value }); }, [value]);
+  useEffect(() => { onChange(st.value); }, [st.value]);
+
+  const handleInput = e => setSt({ value: e.currentTarget.value });
+
+  return <theme.Input
+    type='text'
+    value={ st.value }
+    onChange={ handleInput }
+  />
+};
 
 export default Input;

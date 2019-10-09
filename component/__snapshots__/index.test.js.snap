@@ -2,6 +2,7 @@
 
 exports[`Component renders with value 1`] = `
 <styled.input
+  onChange={[Function]}
   type="text"
   value="test"
 />
@@ -9,7 +10,7 @@ exports[`Component renders with value 1`] = `
 
 exports[`Component theme Input 1`] = `
 .c0 {
-  padding: 10px;
+  padding: 5px;
 }
 
 <input

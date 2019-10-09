@@ -1,10 +1,11 @@
-- Add onChange prop
+* use throttle/debounce to handle value update inside the input component
 - implement component with label
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.2 -
++ Add onChange prop
 + test default theme
 + test watch npm script
 + theming support
