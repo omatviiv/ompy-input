@@ -11,8 +11,8 @@ describe('Component', () => {
     expect(wrapper).toMatchSnapshot();
   });
   describe('theme', () => {
-    it('Input', () => {
-      const wrapper = renderer.create(<thm.Input />).toJSON();
+    it('BareInput', () => {
+      const wrapper = renderer.create(<thm.BareInput />).toJSON();
       expect(wrapper).toMatchSnapshot();
     });
   });

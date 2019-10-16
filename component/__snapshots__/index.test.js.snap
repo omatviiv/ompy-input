@@ -8,7 +8,7 @@ exports[`Component renders with value 1`] = `
 />
 `;
 
-exports[`Component theme Input 1`] = `
+exports[`Component theme BareInput 1`] = `
 .c0 {
   padding: 5px;
 }

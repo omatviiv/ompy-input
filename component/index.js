@@ -9,16 +9,16 @@ type Props = {|
   value?: string,
   onChange?: (value: string) => any,
   theme?: {|
-    Input: * => Node,
+    BareInput: * => Node,
   |},
 |}
 */
 export const thm = {
-  Input: styled.input`
+  BareInput: styled.input`
     padding: 5px;
   `,
 };
-const Input = ({
+const BareInput = ({
   value = '',
   onChange = (a, b) => a + b,
   theme = thm,
@@ -29,11 +29,11 @@ const Input = ({
 
   const handleInput = e => setSt({ value: e.currentTarget.value });
 
-  return <theme.Input
+  return <theme.BareInput
     type='text'
     value={ st.value }
     onChange={ handleInput }
   />
 };
 
-export default Input;
+export default BareInput;
