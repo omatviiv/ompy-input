@@ -1,5 +1,7 @@
 * use throttle/debounce to handle value update inside the input component
-  + use val useState hook for input value
+  + use val useState hook for input value the way that DevTools show name
+  + update demo page with default markup to present component features
+  - use debounce
 - implement component with label
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
