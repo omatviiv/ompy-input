@@ -23,16 +23,14 @@ const BareInput = ({
   onChange = (a, b) => a + b,
   theme = thm,
 }/*: Props*/) => {
-  const [st, setSt] = useState({ value });
-  useEffect(() => { setSt({ value }); }, [value]);
-  useEffect(() => { onChange(st.value); }, [st.value]);
-
-  const handleInput = e => setSt({ value: e.currentTarget.value });
+  const [{ val }, setVal] = useState({ val: value });
+  useEffect(() => { setVal({ val: value }); }, [value]);
+  useEffect(() => { onChange(val); }, [val]);
 
   return <theme.BareInput
     type='text'
-    value={ st.value }
-    onChange={ handleInput }
+    value={ val }
+    onChange={ e => setVal({ val: e.currentTarget.value}) }
   />
 };
 

@@ -1,4 +1,5 @@
 * use throttle/debounce to handle value update inside the input component
+  + use val useState hook for input value
 - implement component with label
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
