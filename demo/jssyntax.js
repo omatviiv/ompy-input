@@ -19,6 +19,7 @@ export const magentaDark = "#865D5D";
 export default {
   "hljs": {
     "gridArea": "code",
+    "width": "50vw",
     "overflowX": "auto",
     "padding": "10px",
     "margin": "0",

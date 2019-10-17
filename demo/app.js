@@ -1,6 +1,5 @@
 // @flow
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import Code from 'react-syntax-highlighter';
 
@@ -8,10 +7,11 @@ import BareInput from 'componnt';
 import syntax, { black, whiteLight, red } from './jssyntax';
 
 const Article = styled.article`
+  display: grid;
+  justify-content: space-between;
   color: ${ black };
   background-color: ${ whiteLight };
   padding: 0 0 20px 0;
-  display: grid;
   grid-template-areas: 'header    code'
                        'component code'
                        'comment   code';
@@ -45,11 +45,12 @@ const App = () => {
   return (
     <>
       <Article>
-        <Header>Force input value update</Header>
+        <Header>Basic usage</Header>
         <Component>
-          <BareInput value={ article1.defaultInput } />
+          <BareInput value='default input' />
         </Component>
         <Code language='javascript' style={ syntax }>{ `
+import React from 'react';
 import BareInput from 'react';
 
 const Component = () => (
@@ -57,11 +58,35 @@ const Component = () => (
 );
         ` }</Code>
         <Comment>
+        </Comment>
+      </Article>
+      <Article>
+        <Header>Force input value update</Header>
+        <Component>
+          <BareInput value={ article1.defaultInput } />
+        </Component>
+        <Code language='javascript' style={ syntax }>{ `
+import React, { useState } from 'react';
+import BareInput from 'react';
+
+const Component = () => {
+  const [default, setDefault] = useState('default input');
+  
+  return (
+    <>
+      <BareInput value={ default } />
+      Click <a onClick={ e => setDefault('new value') }> here </a>
+      to update input value to 'new value'
+    </>
+  );
+};
+        ` }</Code>
+        <Comment>
           Click
-          <A onClick={ e => setArticle1({ defaultInput: 'new value' }) }>
-            here
-          </A>
-          to update value of the input to 'new value'
+          <A
+            onClick={ e => setArticle1({ defaultInput: 'new value' }) }
+          > here </A>
+          to update input value to 'new value'
         </Comment>
       </Article>
     </>
