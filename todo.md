@@ -1,6 +1,7 @@
 * use throttle/debounce to handle value update inside the input component
   + use val useState hook for input value the way that DevTools show name
   + update demo page with default markup to present component features
+  + layout enhancements and start building omtv-theme here
   - use debounce
 - implement component with label
 - scp2 lodash vulnerability

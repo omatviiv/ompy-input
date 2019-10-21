@@ -1,32 +1,51 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-import { black, whiteLight, red } from './jssyntax';
+import { black, whiteLight, red } from 'demo/theme/colors';
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&display=swap&subset=cyrillic-ext');
+  html {
+    font-size: 100%;
+    font-family: 'Ubuntu Mono', Consolas, monospace;
+  }
+  body {
+    background-color: ${ whiteLight };
+    min-height: 100vh;
+    font-size: 1em;
+  }
+  main#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ${ whiteLight };
+    min-height: 100vh;
+  }
+`;
 
 export const Article = styled.article`
   display: grid;
-  justify-content: space-between;
   color: ${ black };
   background-color: ${ whiteLight };
-  padding: 0 0 20px 0;
-  grid-template-areas: 'header    code'
-                       'component code'
-                       'comment   code';
-  width: 100%;
+  padding: 0 0 1rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(80ch, 1fr));
+  width: 100vmin;
+  font-family: 'Ubuntu Mono', Consolas, monospace;
 `;
-export const Header = styled.h2`
-  grid-area: header;
-  padding: 10px;
+export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+`;
+export const Header = styled.h1`
+  padding: .5rem;
   margin: 0;
 `;
 export const Comment = styled.em`
-  grid-area: comment;
-  padding: 10px;
+  padding: .5rem;
   margin: 0;
 `;
 export const Component = styled.p`
-  grid-area: component;
-  padding: 10px;
+  padding: .5rem;
   margin: 0;
 `;
 export const A = styled.a`

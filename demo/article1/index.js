@@ -1,20 +1,29 @@
 // @flow
 import React, { useState } from 'react';
-import Code from 'react-syntax-highlighter';
+import { Prism as Code } from 'react-syntax-highlighter';
 
 import BareInput from 'componnt';
-import syntax from 'demo/theme/jssyntax';
-import { Article, Header, Comment, Component, A } from 'demo/theme';
+import syntax from 'demo/theme/prism';
+import { Article, Header, Comment, Component, A, Main } from 'demo/theme';
 
 const Article1 = () => {
   const [val, setVal] = useState/*<string>*/('default input');
   
   return (
     <Article>
-      <Header>Force input value update</Header>
-      <Component>
-        <BareInput value={ val } />
-      </Component>
+      <Main>
+        <Header>Force input value update</Header>
+        <Component>
+          <BareInput value={ val } />
+        </Component>
+        <Comment>
+          Click
+          <A
+            onClick={ e => setVal('new value') }
+          > here </A>
+          to update input value to 'new value'
+        </Comment>
+      </Main>
       <Code language='javascript' style={ syntax }>{ `
 import React, { useState } from 'react';
 import BareInput from 'omtv-react-input';
@@ -31,13 +40,6 @@ const Component = () => {
   );
 };
       ` }</Code>
-      <Comment>
-        Click
-        <A
-          onClick={ e => setVal('new value') }
-        > here </A>
-        to update input value to 'new value'
-      </Comment>
     </Article>
   );
 };
