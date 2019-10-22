@@ -4,6 +4,7 @@
   + layout enhancements and start building omtv-theme here
   * fix zoom out done by browser on mobile with vieport meta tag
     https://stackoverflow.com/questions/16387400/getting-the-right-font-size-on-every-mobile-device
+  * use ch based media queries to switch between 1 and 2 column layouts
   - use debounce
 - implement component with label
 - scp2 lodash vulnerability

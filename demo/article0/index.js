@@ -8,14 +8,12 @@ import { Article, Header, Comment, Component, A, Main } from 'demo/theme';
 
 const Article0 = () => (
   <Article>
-    <Main>
-      <Header>Basic usage</Header>
-      <Component>
-        <BareInput value='default input' />
-      </Component>
-      <Comment>
-      </Comment>
-    </Main>
+    <Header>Basic usage</Header>
+    <Component>
+      <BareInput value='default input' />
+    </Component>
+    <Comment>
+    </Comment>
     <Code language='javascript' style={ syntax }>{ `
 import React from 'react';
 import BareInput from 'omtv-react-input';

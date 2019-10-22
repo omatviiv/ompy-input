@@ -7,6 +7,7 @@ import {
 
 export default {
   'pre[class*="language-"]': {
+    'gridArea': 'code',
     'color': white,
     'fontFamily': '"Ubuntu Mono", Consolas, monospace',
     'fontSize': '1rem',

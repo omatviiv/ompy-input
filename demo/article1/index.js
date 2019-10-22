@@ -11,19 +11,17 @@ const Article1 = () => {
   
   return (
     <Article>
-      <Main>
-        <Header>Force input value update</Header>
-        <Component>
-          <BareInput value={ val } />
-        </Component>
-        <Comment>
-          Click
-          <A
-            onClick={ e => setVal('new value') }
-          > here </A>
-          to update input value to 'new value'
-        </Comment>
-      </Main>
+      <Header>Force input value update</Header>
+      <Component>
+        <BareInput value={ val } />
+      </Component>
+      <Comment>
+        Click
+        <A
+          onClick={ e => setVal('new value') }
+        > here </A>
+        to update input value to 'new value'
+      </Comment>
       <Code language='javascript' style={ syntax }>{ `
 import React, { useState } from 'react';
 import BareInput from 'omtv-react-input';
