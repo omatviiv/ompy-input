@@ -42,6 +42,7 @@ export const Article = styled.article`
     display: grid;
     max-width: 160ch;
     justify-content: space-between;
+    grid-template-rows: min-content min-content 1fr;
     grid-template-columns: max-content 80ch;
     grid-template-areas: 'header    code'
                          'component code'
