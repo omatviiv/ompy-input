@@ -1,20 +1,17 @@
 // @flow
 import React from 'react';
-import { Prism as Code } from 'react-syntax-highlighter';
 
 import BareInput from 'componnt';
-import syntax from 'demo/theme/prism';
-import { Article, Header, Comment, Component, A, Main } from 'demo/theme';
+import { Article, Header, Comment, Component, Code, A } from 'demo/theme';
 
-const Article0 = () => (
+const Artcl = () => (
   <Article>
-    <Header>Basic usage</Header>
     <Component>
       <BareInput value='default input' />
     </Component>
     <Comment>
     </Comment>
-    <Code language='javascript' style={ syntax }>{ `
+    <Code>{ `
 import React from 'react';
 import BareInput from 'omtv-react-input';
 
@@ -25,4 +22,4 @@ const Component = () => (
   </Article>
 );
 
-export default Article0;
+export default Artcl;

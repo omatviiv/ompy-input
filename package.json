@@ -56,5 +56,8 @@
   },
   "homepage": "https://github.com/omatviiv/omtv-react-input.git",
   "author": "Oleh Matviiv",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "throttle-debounce": "^2.1.0"
+  }
 }

@@ -1,6 +1,12 @@
+// @flow
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import { Prism } from 'react-syntax-highlighter';
+/*::
+import type { Node } from 'react';
+*/
 
+import syntax from 'demo/theme/prism';
 import { black, whiteLight, red } from 'demo/theme/colors';
 
 export const GlobalStyle = createGlobalStyle`
@@ -26,6 +32,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+/*::
+type CodeProps = {|
+  children: Node,
+|}
+*/
+export const Code = ({ children }/*: CodeProps*/) => (
+  <Prism language='javascript' style={ syntax }>
+    { children }
+  </Prism>
+);
+
 export const Article = styled.article`
   font-family: 'Ubuntu Mono', Consolas, monospace;
   color: ${ black };
@@ -49,22 +66,59 @@ export const Article = styled.article`
                          'comment   code';
   }
 `;
-export const Header = styled.h1`
+
+export const MainHeader = styled.h1`
+  padding: .5rem;
+  margin: 0;
+`;
+
+/*::
+type HeaderProps = {|
+  bookmark?: string,
+  children: Node,
+|}
+*/
+const H2 = styled.h2`
   grid-area: header;
   padding: .5rem;
   margin: 0;
+  & > a {
+    text-decoration: none;
+    padding-left: .5rem;
+    cursor: pointer;
+  }
 `;
+
+export const Header = ({ bookmark, children }/*: HeaderProps*/) => (
+  <H2 id={ bookmark || '' } >
+    { children }{ bookmark && ( <A href={`#${ bookmark }` }>#</A>) }
+  </H2>
+);
+
 export const Comment = styled.em`
   grid-area: comment;
   padding: .5rem;
+  @media (min-width: 160ch) {
+    max-width: 70ch;
+  }
   margin: 0;
 `;
+
 export const Component = styled.p`
   grid-area: component;
   padding: .5rem;
   margin: 0;
 `;
+
 export const A = styled.a`
   color: ${ red };
   cursor: pointer;
+`;
+
+export const Button = styled.button`
+  border: 1px solid ${ black };
+  color: ${ black };
+  padding: .5rem;
+  cursor: pointer;
+  background: none;
 `;

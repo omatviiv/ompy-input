@@ -1,18 +1,18 @@
-* component and demo improvements
-  + use val useState hook for input value the way that DevTools show name
-  + update demo page with default markup to present component features
-  + layout enhancements and start building omtv-theme here
-  + fix zoom out done by browser on mobile with vieport meta tag
-    https://stackoverflow.com/questions/16387400/getting-the-right-font-size-on-every-mobile-device
-  + use ch based media queries to switch between 1 and 2 column layouts
-  * fix grid rows size for two columns layout
-* use throttle/debounce to handle value update inside the input component
 - implement component with label
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.2 -
++ use debounce to handle value update inside the input component
++ component and demo improvements
+  + use val useState hook for input value the way that DevTools show name
+  + update demo page with default markup to present component features
+  + layout enhancements and start building omtv-theme here
+  + fix zoom out done by browser on mobile with vieport meta tag
+    https://stackoverflow.com/questions/16387400/getting-the-right-font-size-on-every-mobile-device
+  + use ch based media queries to switch between 1 and 2 column layouts
+  + fix grid rows size for two columns layout
 + Add onChange prop
 + test default theme
 + test watch npm script
