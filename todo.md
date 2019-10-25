@@ -4,7 +4,8 @@
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
-# 0.0.2 -
+# 0.0.2 - improvements
++ publish release
 + move demo/theme into omtv-theme repo
 + use debounce to handle value update inside the input component
 + component and demo improvements

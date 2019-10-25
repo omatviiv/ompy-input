@@ -1,6 +1,6 @@
 {
   "name": "omtv-react-input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "text input component",
   "main": "component/index.js",
   "scripts": {
