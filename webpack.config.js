@@ -20,7 +20,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, 'demo'),
+          path.resolve(__dirname, 'component'),
+          path.resolve(__dirname, 'node_modules/omtv-theme'),
+        ],
         use: {
           loader: 'babel-loader',
           options: {

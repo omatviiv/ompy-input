@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
+import { MainHeader } from 'omtv-theme';
 
-import { MainHeader } from 'demo/theme';
 import Article0 from 'demo/article0';
 import Article1 from 'demo/article1';
 import Article2 from 'demo/article2';

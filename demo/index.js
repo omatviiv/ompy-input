@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
+import { GlobalStyle } from 'omtv-theme';
 
 import App from './app';
-import { GlobalStyle } from 'demo/theme';
 
 ReactDOM.render(<>
   <GlobalStyle />

@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
+import { Article, Header, Comment, Component, Code, A } from 'omtv-theme';
 
 import BareInput from 'componnt';
-import { Article, Header, Comment, Component, Code, A } from 'demo/theme';
 
 const Artcl = () => (
   <Article>

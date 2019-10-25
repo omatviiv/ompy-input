@@ -1,9 +1,11 @@
 - implement component with label
+- show theme picker for a component
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.2 -
++ move demo/theme into omtv-theme repo
 + use debounce to handle value update inside the input component
 + component and demo improvements
   + use val useState hook for input value the way that DevTools show name

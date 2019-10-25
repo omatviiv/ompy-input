@@ -37,7 +37,7 @@ const BareInput = ({
     type='text'
     value={ val }
     onChange={ e => setVal({ val: e.currentTarget.value}) }
-  />
+  />;
 };
 
 export default BareInput;
