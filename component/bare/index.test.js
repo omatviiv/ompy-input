@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Component, { thm } from 'componnt';
+import Component, { thm } from 'componnt/bare';
 
 describe('Component', () => {
   it('renders with value', () => {

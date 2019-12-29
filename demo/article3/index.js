@@ -10,17 +10,16 @@ import BareInput from 'componnt/bare';
 const Artcl = () => (
   <Article>
     <Component>
-      <BareInput value='default input' />
+      <BareInput />
     </Component>
     <Comment>
-      Just input, no label
     </Comment>
     <Code>{ `
 import React from 'react';
-import BareInput from 'omtv-react-input/component/bare';
+import Input from 'omtv-react-input';
 
 const Component = () => (
-  <BareInput value='default input' />
+  <Input />
 );
     ` }</Code>
   </Article>

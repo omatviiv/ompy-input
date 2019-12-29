@@ -35,7 +35,7 @@
     "jest-styled-components": "^6.3.3",
     "node": "^12.11.0",
     "normalize.css": "^8.0.1",
-    "omtv-theme": "^4.0.1",
+    "omtv-theme": "^4.0.2",
     "password-prompt": "^1.1.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

@@ -31,7 +31,7 @@ const Artcl = () => {
       </Comment>
       <Code>{ `
 import React, { useState } from 'react';
-import BareInput from 'omtv-react-input';
+import BareInput from 'omtv-react-input/component/bare';
 
 const Component = () => {
   const [{ amount }, setAmount] = useState({ amount: 0 });

@@ -25,7 +25,7 @@ const Artcl = () => {
       </Comment>
       <Code>{ `
 import React, { useState } from 'react';
-import BareInput from 'omtv-react-input';
+import BareInput from 'omtv-react-input/component/bare';
 
 const Component = () => {
   const [val, setVal] = useState('default input');
