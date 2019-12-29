@@ -1,10 +1,11 @@
 // @flow
 import React, { useState } from 'react';
+import { A, Button } from 'omtv-theme';
 import {
-  Article, Header, Comment, Component, Code, A, Button,
-} from 'omtv-theme';
+  Article, Header, Comment, Component, Code,
+} from 'omtv-theme/theme/demoArticle';
 
-import BareInput from 'componnt';
+import BareInput from 'componnt/bare';
 
 const Artcl = () => {
   const [{ amount }, setAmount] = useState({ amount: 0 });

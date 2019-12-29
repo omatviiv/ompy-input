@@ -1,10 +1,11 @@
 - implement component with label
-- show theme picker for a component
+- demo page: show theme picker for a component
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
 # 0.0.3 - 
++ upgrade to omtv-theme@4.0.1
 
 # 0.0.2 - fxes and improvements
 + publish release

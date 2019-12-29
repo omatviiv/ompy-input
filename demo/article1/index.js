@@ -1,8 +1,11 @@
 // @flow
 import React, { useState } from 'react';
-import { Article, Header, Comment, Component, Code, A } from 'omtv-theme';
+import { A } from 'omtv-theme';
+import {
+  Article, Header, Comment, Component, Code,
+} from 'omtv-theme/theme/demoArticle';
 
-import BareInput from 'componnt';
+import BareInput from 'componnt/bare';
 
 const Artcl = () => {
   const [val, setVal] = useState/*<string>*/('default input');
