@@ -1,7 +1,44 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
+
 import BareInput from './bare';
 
-const Input = () => <BareInput />;
+/*::
+import type { Node } from 'react';
+
+type Props = {|
+  label?: string,
+  value?: string,
+  onChange?: (value: string) => any,
+  debounceTimeout?: number,
+  theme?: {|
+    Container: * => Node,
+    Label: * => Node,
+    BareInput: * => Node,
+  |},
+|}
+*/
+export const thm = { // default theme
+  Container: styled.div``,
+  Label: styled.label``,
+  BareInput: styled.input`
+    padding: 5px;
+  `,
+};
+const Input = ({
+  label = '',
+  value = '',
+  onChange = () => {},
+  debounceTimeout = 300,
+  theme = thm,
+}: Props) => (
+  <BareInput
+    value={ value }
+    onChange={ onChange }
+    debounceTimeout={ 300 }
+    theme = {{ BareInput: theme.BareInput }}
+  />
+);
 
 export default Input;

@@ -15,14 +15,14 @@ type Props = {|
   |},
 |}
 */
-export const thm = {
+export const thm = { // default theme
   BareInput: styled.input`
     padding: 5px;
   `,
 };
 const BareInput = ({
   value = '',
-  onChange = (a, b) => a + b,
+  onChange = () => {},
   debounceTimeout = 300,
   theme = thm,
 }/*: Props*/) => {

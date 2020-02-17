@@ -1,3 +1,4 @@
+[//]: # ()
 * implement component with label
 - demo page: show theme picker for a component
 - scp2 lodash vulnerability
@@ -5,6 +6,7 @@
   https://github.com/spmjs/node-scp2/pull/123
 
 # 1.0.0 - 
++ make BareInput a default exported component
 + init Input component + init demo for it
 + make BareInput a 'secondary' export
 + upgrade to omtv-theme@4.0.1
