@@ -6,6 +6,8 @@
   https://github.com/spmjs/node-scp2/pull/123
 
 # 1.0.0 - 
++ use rest prop instead className since it will inclue all extra props
+  like event handlers, className and others
 + add className prop to support extending style with styled components
 + make BareInput a default exported component
 + init Input component + init demo for it
