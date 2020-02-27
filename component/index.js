@@ -17,6 +17,7 @@ type Props = {|
     Label: * => Node,
     BareInput: * => Node,
   |},
+  className?: string,
 |}
 */
 export const thm = { // default theme
@@ -32,12 +33,14 @@ const Input = ({
   onChange = () => {},
   debounceTimeout = 300,
   theme = thm,
+  className,
 }: Props) => (
   <BareInput
-    value={ value }
-    onChange={ onChange }
-    debounceTimeout={ 300 }
+    value={value}
+    onChange={onChange}
+    debounceTimeout={300}
     theme = {{ BareInput: theme.BareInput }}
+    className={className}
   />
 );
 
