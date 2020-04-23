@@ -13,6 +13,7 @@ type Props = {|
   theme?: {|
     BareInput: * => Node,
   |},
+  rest?: any,
 |}
 */
 export const thm = { // default theme
@@ -25,6 +26,7 @@ const BareInput = ({
   onChange = () => {},
   debounceTimeout = 300,
   theme = thm,
+  ...rest
 }/*: Props*/) => {
   const [{ val }, setVal] = useState({ val: value });
   const [{ onChangeDebounced }, setOnChangeDebounced ] = useState({
@@ -37,6 +39,7 @@ const BareInput = ({
     type='text'
     value={ val }
     onChange={ e => setVal({ val: e.currentTarget.value}) }
+    {...rest}
   />;
 };
 

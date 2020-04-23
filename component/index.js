@@ -33,8 +33,8 @@ const Input = ({
   onChange = () => {},
   debounceTimeout = 300,
   theme = thm,
-  rest
-} /*: Props*/) => (
+  ...rest
+}/*: Props*/) => (
   <BareInput
     value={value}
     onChange={onChange}
