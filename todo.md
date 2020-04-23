@@ -1,12 +1,12 @@
-[//]: # ()
-
-- implement component with label
+[//]: # (cmt):
+[//]: # (stg&cmt):
 - demo page: show theme picker for a component
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
 # 1.0.0 - 
++ webpack to show only warnings and errors
 + fix rest in args
 + use rest prop instead className since it will inclue all extra props
   like event handlers, className and others
