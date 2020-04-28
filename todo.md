@@ -1,5 +1,6 @@
 [//]: # (cmt):
 [//]: # (stg&cmt):
+- update to ompy-theme
 - demo page: show theme picker for a component
 - scp2 lodash vulnerability
   https://github.com/spmjs/node-scp2/issues/116
