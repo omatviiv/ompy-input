@@ -1,6 +1,6 @@
 {
-  "name": "omtv-react-input",
-  "version": "0.0.2",
+  "name": "ompy-input",
+  "version": "0.0.3",
   "description": "text input component",
   "main": "component/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.5.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
@@ -31,7 +31,7 @@
     "flow-bin": "^0.108.0",
     "flow-webpack-plugin": "^1.2.0",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "^24.9.0",
+    "jest": "^25.5.0",
     "jest-styled-components": "^6.3.3",
     "node": "^12.11.0",
     "normalize.css": "^8.0.1",
@@ -50,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/omatviiv/omtv-react-input.git"
+    "url": "https://github.com/omatviiv/ompy-input.git"
   },
   "bugs": {
-    "url": "https://github.com/omatviiv/omtv-react-input.git/issues"
+    "url": "https://github.com/omatviiv/ompy-input.git/issues"
   },
-  "homepage": "https://github.com/omatviiv/omtv-react-input.git",
+  "homepage": "https://github.com/omatviiv/ompy-input.git",
   "author": "Oleh Matviiv",
   "license": "ISC",
   "dependencies": {

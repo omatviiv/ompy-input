@@ -6,12 +6,12 @@ test
 
 # Install
 ```
-npm i omtv-react-input
+npm i ompy-input
 ```
 
 # Use
 ```
-import Input from 'omtv-react-input';
+import Input from 'ompy-input';
 
 <Input value='some default input' />
 ```
@@ -29,7 +29,7 @@ module.exports = {
         test: /\.js$/,
         include: [
           path.resolve(__dirname, 'src'),
-          path.resolve(__dirname, 'node_modules/omtv-react-input'),
+          path.resolve(__dirname, 'node_modules/ompy-input'),
         ],
         use: {
           loader: 'babel-loader',

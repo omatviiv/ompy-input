@@ -5,7 +5,9 @@
   https://github.com/spmjs/node-scp2/issues/116
   https://github.com/spmjs/node-scp2/pull/123
 
-# 1.0.0 - 
+# 0.0.3 - 
++ npm audit fix
++ move to ompy-input
 + webpack to show only warnings and errors
 + fix rest in args
 + use rest prop instead className since it will inclue all extra props
